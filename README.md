@@ -1,32 +1,28 @@
 
 # Reto Mutantes - Mercadolibre
 
-Se puede ver una version estable del proyecto aqui:
-
-
-- [Ejercicio](#ejercicio)
-  - [Especificaciones](#especificaciones)
-  - [Implementación y tecnologias usadas](#implementaci%C3%B3n-y-tecnologias-usadas)
-  - [Comentarios relevantes](#comentarios-relevantes)
-- [Setup](#setup)
-  - [Instrucciones](#instrucciones)
-  - [Uso](#uso)
-  - [API Url](#api)
-  - [Servicios](#servicios)
-    - [Es mutante](#es-mutante)
-    - [Estadisticas](#estadisticas)
-- [Test](#test)
-  - [Automaticos](#automaticos)
-  - [Scripts](#scripts)
-  - [Cobertura](#cobertura)
-
-## Ejercicio
-
 ### Especificaciones
+Magneto quiere reclutar la mayor cantidad de mutantes para poder luchar
+contra los X-Men.
+Te ha contratado a ti para que desarrolles un proyecto que detecte si un
+humano es mutante basándose en su secuencia de ADN.
 
-Los archivos correspondientes a la especificación del ejercicio se encuentran en la carpeta `spec`. Dentro de ella
-se encuentra [un pdf](./spec/Examen%20Mercadolibre%202017.pdf) que describe la funcionalidades y requisitos esperados
-que contenga el proyecto.
+Para eso te ha pedido crear un programa con un método o función con la siguiente firma (En
+alguno de los siguiente lenguajes: Java / Golang / C-C++ / Javascript (node) / Python / Ruby):
+boolean isMutant(String[] dna); // Ejemplo Java
+En donde recibirás como parámetro un array de Strings que representan cada fila de una tabla
+de (NxN) con la secuencia del ADN. Las letras de los Strings solo pueden ser: (A,T,C,G), las
+cuales representa cada base nitrogenada del ADN.
+
+![image](https://user-images.githubusercontent.com/98285203/174024593-b648f08b-30a2-4a6c-a8e5-409a4141423b.png)
+
+Sabrás si un humano es mutante, si encuentras más de una secuencia de cuatro letras
+iguales​, de forma oblicua, horizontal o vertical.
+Ejemplo (Caso mutante):
+String[] dna = {"ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"};
+En este caso el llamado a la función isMutant(dna) devuelve “true”.
+
+Desarrolla el algoritmo de la manera más eficiente posible
 
 ### Implementacion y tecnologias usadas
 
