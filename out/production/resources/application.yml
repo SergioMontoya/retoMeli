@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://melimutant:8FuOntYqkCBxxRHB@chechomelimutant.3op4lwy.mongodb.net/dnadb01?retryWrites=true&w=majority
+  application:
+    name: mutants
+server:
+  port: 8080
