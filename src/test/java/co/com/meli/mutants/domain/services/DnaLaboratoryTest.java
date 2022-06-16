@@ -30,9 +30,9 @@ public class DnaLaboratoryTest {
     public void isMutantFalse() {
         String[] dna = {"ACGAGT",
                 "CAGTGC",
-                "TTCTGT",
+                "ACGAGT",
                 "AGAAGG",
-                "CACCTA",
+                "ACGAGT",
                 "TCACTG"};
         Mono<Boolean> response = dnaLaboratory.isMutant(dna);
         assertEquals(Boolean.FALSE, response.block());

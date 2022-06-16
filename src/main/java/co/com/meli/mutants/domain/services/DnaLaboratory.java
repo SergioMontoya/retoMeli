@@ -32,32 +32,32 @@ public class DnaLaboratory implements IDnaLaboratory {
     public Mono<Boolean> validateSequences(int dnaLength, char[][] dnaMatriz) {
         boolean isMutantInThisSequence = false;
         int sequenceCountL = 0;
+        int row = 0;
+        int col = 0;
+        int maxIteration = dnaLength - 1;
 
-        for (int row = 0; row < dnaLength - 1; row++) {
-            if (Boolean.TRUE.equals(isMutantInThisSequence)) {
-                break;
-            }
-            int n = 1 - row;
-            for (int c = 0; c < dnaLength - 1; c++) {
-                char actualChar = dnaMatriz[row][c];
-                char nextCharVert = dnaMatriz[row][c + 1];
-                char nextCharHor = dnaMatriz[row + n][c];
+        while ((row < (maxIteration)) && (!isMutantInThisSequence)) {
 
-                if (validateDiagonal(dnaLength, dnaMatriz, row, c, actualChar)) {
+            while ((col < (maxIteration)) && (!isMutantInThisSequence)) {
+
+                char actualChar = dnaMatriz[row][col];
+                char nextCharVert = dnaMatriz[row][col + 1];
+                char nextCharHor = dnaMatriz[row + 1][col];
+
+                if (validateDiagonal(dnaLength, dnaMatriz, row, col, actualChar)) {
                     isMutantInThisSequence = true;
-                    break;
                 }
                 if (actualChar == nextCharVert || actualChar == nextCharHor) {
                     sequenceCountL++;
                     if (sequenceCountL >= 3) {
                         isMutantInThisSequence = true;
-                        break;
                     }
                 } else {
                     sequenceCountL = 0;
                 }
-                n++;
+                col++;
             }
+            row++;
         }
         return Mono.just(isMutantInThisSequence);
     }
