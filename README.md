@@ -46,13 +46,16 @@ Una vez realizado el paso anterior, para dar inicio a la aplicación deben ejecu
 ### Pruebas
 Para realizar las pruebas al servicio se entregan los siguientes artefactos.
 
-#Collection de postman, con los ejemplos para las solicitudes para ambiente local y el servicio desplegado sobre AWS.
+*Collection de postman, con los ejemplos para las solicitudes para ambiente local y el servicio desplegado sobre AWS.
 
-#Pruebas de carga realizadas en jmeter para las solicitudes hacia AWS.
-Nota: El recurso aprovisionado para la aplicación esta compuesto de una unica instancia Ec2 (Con posibilidad de escalar) que hace parte de la capa gratuita.
+*Scritp para realizar pruebas de carga realizadas en jmeter para las solicitudes hacia AWS.
+https://github.com/SergioMontoya/retoMeli/tree/main/Test
+
+
+Nota: Los recurso aprovisionados para la aplicación esta compuesto de una unica instancia Ec2 (Con posibilidad de escalar) que hace parte de la capa gratuita.
 
 ![image](https://user-images.githubusercontent.com/98285203/174022828-e5d5ccb0-a641-4dae-a5c2-a77602908a32.png)
-
+Para la base de datos se opto por utilizar mongoDb Atlas en su capa gratutita.
 
 #Se comparte adicionalmente el punto de acceso al servicio.
 
