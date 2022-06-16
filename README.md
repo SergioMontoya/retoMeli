@@ -110,4 +110,6 @@ Response: 200 (application/json)
 
 
 #### Cobertura
+![image](https://user-images.githubusercontent.com/98285203/174102325-346a8830-d856-4701-a1d5-b73410657377.png)
+
 
