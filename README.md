@@ -27,7 +27,7 @@ Desarrolla el algoritmo de la manera más eficiente posible
 ### Implementacion y tecnologias usadas
 
 - [Spring WebFlux]
-- [MongoDB Atlas]
+- [MongoDB Atlas] 
 - [jUnit]
 - [Amazon Web Service (ec2)]
 
@@ -55,7 +55,12 @@ https://github.com/SergioMontoya/retoMeli/tree/main/Test
 Nota: Los recurso aprovisionados para la aplicación esta compuesto de una unica instancia Ec2 (Con posibilidad de escalar) que hace parte de la capa gratuita.
 
 ![image](https://user-images.githubusercontent.com/98285203/174022828-e5d5ccb0-a641-4dae-a5c2-a77602908a32.png)
+
 Para la base de datos se opto por utilizar mongoDb Atlas en su capa gratutita.
+
+![image](https://user-images.githubusercontent.com/98285203/174124439-68f84e1a-e170-41e8-9504-aa6a4ffc0142.png)
+
+![image](https://user-images.githubusercontent.com/98285203/174124545-4289ca81-9095-4cb7-ab52-17dcf0f98af9.png)
 
 #Se comparte adicionalmente el punto de acceso al servicio.
 
