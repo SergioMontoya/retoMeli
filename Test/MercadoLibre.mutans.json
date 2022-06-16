@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "0a8e678e-5083-4c09-b5ca-f1cb109e057c",
+		"name": "MercadoLibre",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5049802"
+	},
+	"item": [
+		{
+			"name": "Mutants",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-IBM-Client-Id",
+						"value": "2f1b49e9-b6ec-4dde-b161-23bcc0c80e9a"
+					},
+					{
+						"key": "X-IBM-Client-Secret",
+						"value": "jA3oT5mB7nG6cN6kP4kB1lG7vY8nD4dJ1rS4jD2pA4bP4xK4sB"
+					},
+					{
+						"key": "Request-Tracker",
+						"value": "bacf0061-df9d-467a-b008-633f166cc67b"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"dna\":\n[\"AAAATT\"\n,\"ACGCGC\"\n,\"TCATCT\"\n,\"ACAAGC\"\n,\"CACATA\"\n,\"CCACTG\"]\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "ec2-3-86-251-213.compute-1.amazonaws.com:8080/mutant",
+					"host": [
+						"ec2-3-86-251-213",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mutants Local",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-IBM-Client-Id",
+						"value": "2f1b49e9-b6ec-4dde-b161-23bcc0c80e9a"
+					},
+					{
+						"key": "X-IBM-Client-Secret",
+						"value": "jA3oT5mB7nG6cN6kP4kB1lG7vY8nD4dJ1rS4jD2pA4bP4xK4sB"
+					},
+					{
+						"key": "Request-Tracker",
+						"value": "bacf0061-df9d-467a-b008-633f166cc67b"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"dna\":\n[\"AAAATT\"\n,\"ACGCGC\"\n,\"TCATCT\"\n,\"ACAAGC\"\n,\"CACATA\"\n,\"CCACTG\"]\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/mutant",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Stats",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-IBM-Client-Id",
+						"value": "2f1b49e9-b6ec-4dde-b161-23bcc0c80e9a"
+					},
+					{
+						"key": "X-IBM-Client-Secret",
+						"value": "jA3oT5mB7nG6cN6kP4kB1lG7vY8nD4dJ1rS4jD2pA4bP4xK4sB"
+					},
+					{
+						"key": "Request-Tracker",
+						"value": "bacf0061-df9d-467a-b008-633f166cc67b"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"dna\":[\"ATGCGA\"\n,\"CGGTGC\"\n,\"TTATGT\"\n,\"AGAAAG\"\n,\"ACCCTA\"\n,\"TCACTG\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "ec2-3-86-251-213.compute-1.amazonaws.com:8080/stats",
+					"host": [
+						"ec2-3-86-251-213",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Stats Local",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-IBM-Client-Id",
+						"value": "2f1b49e9-b6ec-4dde-b161-23bcc0c80e9a"
+					},
+					{
+						"key": "X-IBM-Client-Secret",
+						"value": "jA3oT5mB7nG6cN6kP4kB1lG7vY8nD4dJ1rS4jD2pA4bP4xK4sB"
+					},
+					{
+						"key": "Request-Tracker",
+						"value": "bacf0061-df9d-467a-b008-633f166cc67b"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"dna\":[\"ATGCGA\"\n,\"CGGTGC\"\n,\"TTATGT\"\n,\"AGAAAG\"\n,\"ACCCTA\"\n,\"TCACTG\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/stats",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stats"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
