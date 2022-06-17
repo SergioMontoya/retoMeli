@@ -34,9 +34,10 @@
 					}
 				},
 				"url": {
-					"raw": "ec2-3-86-251-213.compute-1.amazonaws.com:8080/mutant",
+					"raw": "http://ec2-54-205-125-39.compute-1.amazonaws.com:8080/mutant",
+					"protocol": "http",
 					"host": [
-						"ec2-3-86-251-213",
+						"ec2-54-205-125-39",
 						"compute-1",
 						"amazonaws",
 						"com"
@@ -112,7 +113,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\"dna\":[\"ATGCGA\"\n,\"CGGTGC\"\n,\"TTATGT\"\n,\"AGAAAG\"\n,\"ACCCTA\"\n,\"TCACTG\"]\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -120,9 +121,10 @@
 					}
 				},
 				"url": {
-					"raw": "ec2-3-86-251-213.compute-1.amazonaws.com:8080/stats",
+					"raw": "http://ec2-54-205-125-39.compute-1.amazonaws.com:8080/stats",
+					"protocol": "http",
 					"host": [
-						"ec2-3-86-251-213",
+						"ec2-54-205-125-39",
 						"compute-1",
 						"amazonaws",
 						"com"
@@ -158,7 +160,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\"dna\":[\"ATGCGA\"\n,\"CGGTGC\"\n,\"TTATGT\"\n,\"AGAAAG\"\n,\"ACCCTA\"\n,\"TCACTG\"]\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"

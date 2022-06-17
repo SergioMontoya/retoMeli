@@ -38,7 +38,7 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">ec2-3-86-251-213.compute-1.amazonaws.com</stringProp>
+          <stringProp name="HTTPSampler.domain">ec2-54-205-125-39.compute-1.amazonaws.com</stringProp>
           <stringProp name="HTTPSampler.port">8085</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -140,7 +140,7 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">ec2-3-86-251-213.compute-1.amazonaws.com</stringProp>
+          <stringProp name="HTTPSampler.domain">ec2-54-205-125-39.compute-1.amazonaws.com</stringProp>
           <stringProp name="HTTPSampler.port">8080</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
