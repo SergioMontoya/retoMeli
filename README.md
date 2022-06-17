@@ -68,7 +68,7 @@ Para la base de datos se opto por utilizar mongoDb Atlas en su capa gratutita.
 
 CASO#1: Is mutant
 Request: 
-- POST ec2-3-86-251-213.compute-1.amazonaws.com:8080/mutant
+- POST [ec2-3-86-251-213.compute-1.amazonaws.com:8080/mutant](http://ec2-54-205-125-39.compute-1.amazonaws.com:8080/mutant)
 Body
 ```
   {"dna":["ATGCGA", "CAGGGC", "TTATGT", "AGAAGG", "CCCCTA", "TCACTG"]}
@@ -101,7 +101,7 @@ Response:
 ###API - Stats
 
 Request: 
-- GET ec2-3-86-251-213.compute-1.amazonaws.com:8080/stats
+- GET [ec2-3-86-251-213.compute-1.amazonaws.com:8080/stats](http://ec2-54-205-125-39.compute-1.amazonaws.com:8080/stats)
 
 Response: 200 (application/json)
 
