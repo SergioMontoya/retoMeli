@@ -25,7 +25,7 @@ En este caso el llamado a la función isMutant(dna) devuelve “true”.
 Desarrolla el algoritmo de la manera más eficiente posible
 
 ### Implementacion y tecnologias usadas
-
+- [Java 17]
 - [Spring WebFlux]
 - [MongoDB Atlas] 
 - [jUnit]
